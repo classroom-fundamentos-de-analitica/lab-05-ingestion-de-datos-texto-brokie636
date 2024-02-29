@@ -24,7 +24,7 @@ if not os.path.exists("test_dataset.csv"):
 
 test_dataset = pd.read_csv("test_dataset.csv")
 
-counts = train_dataset["sentiment"].value_counts()
+counts = test_dataset["sentiment"].value_counts()
 
 assert counts["neutral"] == 274
 assert counts["positive"] == 112
